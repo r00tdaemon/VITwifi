@@ -36,8 +36,6 @@ def index():
         headers={'Cookie':cookie,'Host':'115.248.50.60','User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0'}
         req1=urllib.request.Request(url,data1,headers)
         resp1=urllib.request.urlopen(req1)
-        #respData1=resp1.read()
-        #soup1=BeautifulSoup(respData1,"html.parser")
 
         month=str(int(month)-1)
         global start_date
